@@ -11,12 +11,8 @@ public class lec64 {
 
         System.out.println(num);
 
-        System.out.println("hello");
-
-        System.out.println("second hello");
-
-        System.out.println("third hello");
         
+
     }
 }
 /* 
