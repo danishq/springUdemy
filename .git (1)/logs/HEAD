@@ -1,0 +1,30 @@
+0000000000000000000000000000000000000000 ccf445e035c4f59691805c1e3a5b43e7f5945fdf Danish Qureshi <danishqureshi@danishqureshi.local> 1738488922 +0530	commit (initial): Some message about the change
+ccf445e035c4f59691805c1e3a5b43e7f5945fdf 0000000000000000000000000000000000000000 Danish Qureshi <danishqureshi@danishqureshi.local> 1738489091 +0530	Branch: renamed refs/heads/main to refs/heads/main
+ccf445e035c4f59691805c1e3a5b43e7f5945fdf ccf445e035c4f59691805c1e3a5b43e7f5945fdf Danish Qureshi <danishqureshi@danishqureshi.local> 1738489091 +0530	Branch: renamed refs/heads/main to refs/heads/main
+ccf445e035c4f59691805c1e3a5b43e7f5945fdf 8290227816527e6513f1c5cf1c3a144f17868aa6 Danish Qureshi <danishqureshi@danishqureshi.local> 1738489657 +0530	commit: message
+8290227816527e6513f1c5cf1c3a144f17868aa6 bd67ea24dfffbcfdbd8173954c642a5dc70af086 danishq <dqureshi08@gmail.com> 1738490398 +0530	commit: commit has been made on 3 30 pm
+bd67ea24dfffbcfdbd8173954c642a5dc70af086 85fea5131a6d1454c0057a64771408653e388a6f danishq <dqureshi08@gmail.com> 1738490663 +0530	commit: Another change for final
+85fea5131a6d1454c0057a64771408653e388a6f e064fb312aaa40dfafe769cf77385dcad333ff0a danishq <dqureshi08@gmail.com> 1738491197 +0530	commit: make change on 3 43 pm
+e064fb312aaa40dfafe769cf77385dcad333ff0a d4663802b502bbc63854864a7e952d7ad0b710b4 danishq <dqureshi08@gmail.com> 1738491226 +0530	commit: another 3 45 pm
+d4663802b502bbc63854864a7e952d7ad0b710b4 d344f8dd7f38f822eb98590d52fd276bb76ad730 danishq <dqureshi08@gmail.com> 1738491430 +0530	commit: 47
+d344f8dd7f38f822eb98590d52fd276bb76ad730 94878949fdf9229485d67fd64f05ff2a3cc17b0c danishq <dqureshi08@gmail.com> 1738491472 +0530	commit: empty
+94878949fdf9229485d67fd64f05ff2a3cc17b0c e5b7bcae63c2c7beb357153528c278cb2026fbb2 danishq <dqureshi08@gmail.com> 1738657200 +0530	commit: final commit before log out github
+e5b7bcae63c2c7beb357153528c278cb2026fbb2 4bcc81425f17bfdf84d58c950dabd40e01bca795 danishq <dqureshi08@gmail.com> 1738657310 +0530	commit: everything working correctly?
+4bcc81425f17bfdf84d58c950dabd40e01bca795 4bcc81425f17bfdf84d58c950dabd40e01bca795 danishq <dqureshi08@gmail.com> 1738657390 +0530	checkout: moving from main to mac
+4bcc81425f17bfdf84d58c950dabd40e01bca795 be508218a49e29325971752728afa28d8f231dd8 danishq <dqureshi08@gmail.com> 1738658616 +0530	commit: removed Icon
+be508218a49e29325971752728afa28d8f231dd8 4bcc81425f17bfdf84d58c950dabd40e01bca795 danishq <dqureshi08@gmail.com> 1738658632 +0530	checkout: moving from mac to main
+4bcc81425f17bfdf84d58c950dabd40e01bca795 be508218a49e29325971752728afa28d8f231dd8 danishq <dqureshi08@gmail.com> 1738658649 +0530	merge mac: Fast-forward
+be508218a49e29325971752728afa28d8f231dd8 60ff15be4e50cd70fda9137208d5cc0a1c98c662 danishq <dqureshi08@gmail.com> 1738658785 +0530	commit: rename folder
+60ff15be4e50cd70fda9137208d5cc0a1c98c662 71c83b08345f93a8649c516adc44e9662ac52aa0 danishq <dqureshi08@gmail.com> 1738658909 +0530	commit: made 3 folders
+71c83b08345f93a8649c516adc44e9662ac52aa0 5827da3f8d6f7dea9de4426ad18d918736ec3f9c danishq <dqureshi08@gmail.com> 1738658981 +0530	commit: removed bad folder
+5827da3f8d6f7dea9de4426ad18d918736ec3f9c 053ed66b9e8688a7ef86a7f99a52039597c53ded danishq <dqureshi08@gmail.com> 1738659071 +0530	commit: created .gitignore
+053ed66b9e8688a7ef86a7f99a52039597c53ded 0c99aad205d6d5ea0a715da121e87769331cbce3 danishq <dqureshi08@gmail.com> 1738685495 +0530	commit: print num
+0c99aad205d6d5ea0a715da121e87769331cbce3 be508218a49e29325971752728afa28d8f231dd8 danishq <dqureshi08@gmail.com> 1738686085 +0530	checkout: moving from main to mac
+be508218a49e29325971752728afa28d8f231dd8 0c99aad205d6d5ea0a715da121e87769331cbce3 danishq <dqureshi08@gmail.com> 1738686303 +0530	merge main: Fast-forward
+0c99aad205d6d5ea0a715da121e87769331cbce3 79a96a78aa4f7567c89de3bf4d5f1d466ea047c9 danishq <dqureshi08@gmail.com> 1738686415 +0530	commit: sub branch add
+79a96a78aa4f7567c89de3bf4d5f1d466ea047c9 0c99aad205d6d5ea0a715da121e87769331cbce3 danishq <dqureshi08@gmail.com> 1738686454 +0530	checkout: moving from mac to main
+0c99aad205d6d5ea0a715da121e87769331cbce3 79a96a78aa4f7567c89de3bf4d5f1d466ea047c9 danishq <dqureshi08@gmail.com> 1738686479 +0530	checkout: moving from main to mac
+79a96a78aa4f7567c89de3bf4d5f1d466ea047c9 2fa6df02d3fcf870adcbf84cd8d328f114ac1712 danishq <dqureshi08@gmail.com> 1738686578 +0530	commit: delete icon?
+2fa6df02d3fcf870adcbf84cd8d328f114ac1712 0c99aad205d6d5ea0a715da121e87769331cbce3 danishq <dqureshi08@gmail.com> 1738686593 +0530	checkout: moving from mac to main
+0c99aad205d6d5ea0a715da121e87769331cbce3 2fa6df02d3fcf870adcbf84cd8d328f114ac1712 danishq <dqureshi08@gmail.com> 1738686598 +0530	merge mac: Fast-forward
+2fa6df02d3fcf870adcbf84cd8d328f114ac1712 2fa6df02d3fcf870adcbf84cd8d328f114ac1712 danishq <dqureshi08@gmail.com> 1738686635 +0530	checkout: moving from main to mac
