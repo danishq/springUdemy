@@ -15,6 +15,7 @@ public class lec64 {
 
         System.out.println("second hello");
 
+        System.out.println("third hello");
         
     }
 }
