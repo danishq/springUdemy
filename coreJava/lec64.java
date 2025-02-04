@@ -10,6 +10,9 @@ public class lec64 {
         // Is everything working out correctly
 
         System.out.println(num);
+
+        System.out.println("hello");
+        
         
     }
 }
