@@ -21,6 +21,13 @@ public class lec26{
         Calculator calc = new Calculator();
         int result = calc.add(num1, num2);
         System.out.println(result);
+
+        int arr1[] = new int[2];
+        arr1[0]=1;
+        arr1[1]=2;
+        for(int x:arr1){
+            System.out.println(x);
+        }
     }
 }
 
