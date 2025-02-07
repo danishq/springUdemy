@@ -19,6 +19,7 @@ class A{
     //     }
     // }
 }
+
 class lec71{
     public static void main(String[] args) {
         A obj1 = new A();
