@@ -1,4 +1,5 @@
 // Lambda Expression
+@FunctionalInterface
 interface A{
     void show();
 }
