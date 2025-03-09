@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // Try with multiple catch
 class lec87{
     public static void main(String[] args) {
@@ -19,3 +20,33 @@ class lec87{
 
     }
 }
+=======
+// Try with multiple catch
+class lec87{
+    public static void main(String[] args) {
+        //something
+        int i=0;
+        int j=0;
+        
+        int nums[] = new int[5];
+
+        try{
+            j=18/i; // exception: cannot divide by zero
+            System.out.println(nums[1]);
+            System.out.println(nums[5]); // Index out of bound 5
+            
+        }
+        catch(ArithmeticException e){
+            System.out.println("something Went Wrong. " + e);
+
+        }
+        catch(ArrayIndexOutOfBoundsException e ){
+            System.out.println("Stay in your limit");
+            
+        }
+        System.out.println(j);
+        System.out.println("Bye");
+
+    }
+}
+>>>>>>> Stashed changes
