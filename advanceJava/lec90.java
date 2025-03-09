@@ -27,6 +27,6 @@ public class lec90 {
       System.out.println("Something Went wrong" + e);
     }
     System.out.println(j);
-        System.out.println(Bye");"
+        System.out.println("Bye");
   }
 }
