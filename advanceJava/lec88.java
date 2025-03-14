@@ -1,7 +1,9 @@
 //Exception Hierarchy
 class lec88{
     public static void main(String[] args) {
-        
+      for (int iterate = 0; iterate < 10; iterate++) {
+       System.out.println("Number"+iterate); 
+      }        
     }
 
 }

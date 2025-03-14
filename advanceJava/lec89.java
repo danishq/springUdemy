@@ -28,8 +28,8 @@ class lec89{
 /* 
  *
  *
-Feature	                class lec89 {} (default)                	public class lec89 {}
+Feature	               class lec89 {} (default)                	public class lec89 {}
 Access Level	        Only accessible within the same package 	Accessible from any package
 Filename Restriction	No restriction	                                Must match class name (lec89.java)
-Compilation Error?	No error	                                Error if filename does not match class name
+Compilation Error?	  No error	                                Error if filename does not match class name
  */
