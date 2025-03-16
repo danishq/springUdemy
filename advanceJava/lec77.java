@@ -12,6 +12,7 @@ public class lec77{
         for(Status x:st){
             System.out.println(x+": "+x.ordinal());
         }
+        System.out.println(i);
 
     }
 
