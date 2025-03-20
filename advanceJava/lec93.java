@@ -1,3 +1,4 @@
+
 // Try with Resources
 import java.io.*;
 import java.util.Scanner;
@@ -52,10 +53,11 @@ public class lec93 {
  * can use "throws" in our main function which we should never do that.
  * So we have to handle this br.close exception with a try and catch inside out
  * final block.
- * THERE IS ALSO ANOTHER WAY (SHORCUT) TO DO THIS. bufferedreader is also autoclosable.
+ * THERE IS ALSO ANOTHER WAY (SHORCUT) TO DO THIS. bufferedreader is also
+ * autoclosable.
  * int num =0;
  * try(BufferedReader br = new BufferedReader(new InputStream(Syste.in) ) ){
- *   num = Integer.parseInt(br.readLine());
+ * num = Integer.parseInt(br.readLine());
  * }
  *
  *
