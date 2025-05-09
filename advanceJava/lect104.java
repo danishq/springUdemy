@@ -54,6 +54,7 @@ public class lect104 {
 
     System.out.println(nums);
     System.out.println(l1);
+    System.out.println("commit -m lect105");
 
   }
 }
