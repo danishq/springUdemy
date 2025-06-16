@@ -1,13 +1,36 @@
-// Comparator vs Comparable
 
+// Comparator vs Comparable
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.*;
 
+class Student implements Comparable<Student> {
+  int age;
+  String name;
+
+  public Student(int age, String name) {
+    this.age = age;
+    this.name = name;
+  }
+
+  public String toString() {
+    return "Student [age =" + age + ", name=" + name + "]";
+  }
+
+  @Override
+  public int compareTo(Student that) {
+    if (this.age <= that.age) {
+      return 1;
+    } else {
+      return -1;
+    }
+  }
+
+}
+
 public class lect104 {
   public static void main(String[] args) {
-    List<Integer> nums = new ArrayList<>();
 
     Comparator<Integer> com = new Comparator<Integer>() {
       public int compare(Integer i, Integer j) {
@@ -20,41 +43,19 @@ public class lect104 {
       }
     };
 
-    Comparator<String> cmp = new Comparator<String>() {
-      public int compare(String i, String j) {
-        if (i.length() < j.length()) {
-          return 1;
-        } else {
-          return -1;
-        }
+    List<Student> l1 = new ArrayList<>();
+    l1.add(new Student(43, "Amit"));
+    l1.add(new Student(53, "Sumit"));
+    l1.add(new Student(63, "Jatin"));
+    l1.add(new Student(73, "Pranav"));
+    l1.add(new Student(83, "John"));
+    l1.add(new Student(93, "Navin"));
 
-      }
-    };
+    Collections.sort(l1);
 
-    List<String> l1 = new ArrayList<>();
-    l1.add("abcd");
-    l1.add("abc");
-    l1.add("ab");
-    l1.add("a");
-    nums.add(1);
-    nums.add(1);
-    nums.add(2);
-    nums.add(3);
-    nums.add(4);
-    nums.add(5);
-    nums.add(6);
-    nums.add(2);
-    nums.add(3);
-    nums.add(4);
-    nums.add(5);
-    nums.add(6);
-
-    Collections.sort(nums, com);
-    Collections.sort(l1, cmp);
-
-    System.out.println(nums);
-    System.out.println(l1);
-    System.out.println("commit -m lect105");
+    for (Student s : l1) {
+      System.out.println(s);
+    }
 
   }
 }
