@@ -1,0 +1,111 @@
+
+PostgreSQL + JDBC Java Project — Troubleshooting & Key Commands
+===============================================================
+
+🧵 TOPIC: Connecting Java (JDBC) with PostgreSQL and handling schema, table permissions, inserts, and reusability issues.
+
+---------------------------------------------------------------
+✅ How to List All Databases in psql
+---------------------------------------------------------------
+\l
+\list
+
+---------------------------------------------------------------
+✅ Connect to a Particular Database
+---------------------------------------------------------------
+\c basketball
+
+---------------------------------------------------------------
+✅ List All Schemas in Current DB
+---------------------------------------------------------------
+\dn
+
+---------------------------------------------------------------
+✅ List All Tables in a Specific Schema
+---------------------------------------------------------------
+\dt nba.*
+\dt wnba.*
+
+---------------------------------------------------------------
+✅ View Structure of a Table
+---------------------------------------------------------------
+\d nba.players
+
+---------------------------------------------------------------
+✅ Grant SELECT and INSERT Permissions to User (myuser)
+---------------------------------------------------------------
+GRANT USAGE ON SCHEMA nba TO myuser;
+GRANT SELECT, INSERT ON ALL TABLES IN SCHEMA nba TO myuser;
+ALTER DEFAULT PRIVILEGES IN SCHEMA nba GRANT SELECT, INSERT ON TABLES TO myuser;
+
+-- Repeat for WNBA:
+GRANT USAGE ON SCHEMA wnba TO myuser;
+GRANT SELECT, INSERT ON ALL TABLES IN SCHEMA wnba TO myuser;
+ALTER DEFAULT PRIVILEGES IN SCHEMA wnba GRANT SELECT, INSERT ON TABLES TO myuser;
+
+---------------------------------------------------------------
+✅ Prevent PostgreSQL Schema Error in JDBC
+---------------------------------------------------------------
+-- Example: if "permission denied for schema nba" shows up
+Use the GRANT commands above.
+
+---------------------------------------------------------------
+✅ Fix JDBC Insert Duplicate Key Error
+---------------------------------------------------------------
+-- Problem:
+ERROR: duplicate key value violates unique constraint "teams_pkey"
+
+-- Solutions:
+1. Change ID each time:
+  INSERT INTO nba.teams VALUES (4, 'Knicks', 'New York', 'kns');
+
+2. Use safe insert:
+  INSERT INTO nba.teams VALUES (3, 'Knicks', 'New York', 'kns') ON CONFLICT DO NOTHING;
+
+3. Truncate table each time (testing):
+  TRUNCATE TABLE nba.teams;
+
+4. Use SERIAL to auto-increment team_id:
+  CREATE TABLE nba.teams (
+    team_id SERIAL PRIMARY KEY,
+    name TEXT,
+    city TEXT,
+    abbreviation TEXT
+  );
+
+-- Then in Java:
+  INSERT INTO nba.teams (name, city, abbreviation) VALUES ('Knicks', 'New York', 'kns');
+
+---------------------------------------------------------------
+✅ JDBC Clean Resource Handling (No Hanging Threads)
+---------------------------------------------------------------
+Use try-with-resources in Java:
+
+try (
+  Connection con = DriverManager.getConnection(...);
+  Statement st = con.createStatement();
+  ResultSet rs = st.executeQuery(...);
+) {
+  // use rs
+}
+
+---------------------------------------------------------------
+✅ How to Drop a Schema
+---------------------------------------------------------------
+DROP SCHEMA public CASCADE;
+
+⚠️ Don't delete system schemas:
+- pg_catalog
+- information_schema
+- pg_toast
+
+---------------------------------------------------------------
+🧠 Tips:
+---------------------------------------------------------------
+- \dt *.* → list all tables in all schemas
+- \d schema.table → describe table
+- \dn → list all schemas
+- SERIAL = auto-increment integer
+- ON CONFLICT DO NOTHING = prevent crash on duplicate insert
+
+Saved on: 2025-06-30 11:11:15
