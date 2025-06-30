@@ -30,7 +30,7 @@ public class demo {
     // -----------CONNECT TO POSTGRESQL--------------------
     // LOAD AND REGISTER
     String url = "jdbc:postgresql://localhost:5432/basketball";
-    String username = "myuser";
+    String username = "danish";
     String pass = "12345";
     Class.forName("org.postgresql.Driver");
 
@@ -58,8 +58,8 @@ public class demo {
     rd.show(rs);
 
     // --------------UPDATE -------------------
-    String sqlUpdate = "update nba.teams set abbreviation='NYK' where team_id=3";
-    st.execute(sqlUpdate);
+    // String sqlUpdate = "update nba.teams set abbreviation='NYK' where team_id=3";
+    // st.execute(sqlUpdate);
 
     // --------------DELETE-------------------
     // String sqlDelete = "delete from nba.teams where team_id=2";

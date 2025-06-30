@@ -109,4 +109,3 @@ DROP SCHEMA public CASCADE;
 - ON CONFLICT DO NOTHING = prevent crash on duplicate insert
 
 Saved on: 2025-06-30 11:11:15
-javap -verbose target/classes/demo.class | grep "major version" 
