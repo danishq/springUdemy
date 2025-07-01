@@ -27,6 +27,11 @@ class read {
 public class demo {
 
   public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    int x = 101;
+    String team = "Sacramento Kings";
+    String city = "Sacramento";
+    String abbr = "SAC";
+    String var_sql = "insert into nba.teams values(?,?,?,?)";
     // -----------CONNECT TO POSTGRESQL--------------------
     // LOAD AND REGISTER
     String url = "jdbc:postgresql://localhost:5432/basketball";
@@ -39,6 +44,12 @@ public class demo {
 
     // --------------------CREATE STATEMENT----------------------
     Statement st = con.createStatement();
+    PreparedStatement pst = con.prepareStatement(var_sql);
+    pst.setInt(1, x);
+    pst.setString(2, team);
+    pst.setString(3, city);
+    pst.setString(4, abbr);
+    pst.execute();
 
     // --------------------CRUD IS execute STATEMENT----------------------
     // C R U D ---> Read uses executeQuery and create, update, delete uses execute
