@@ -14,6 +14,7 @@ import java.sql.*;
 class read {
   void show(ResultSet rs) throws SQLException {
     while (rs.next()) {
+        
       System.out.println(
           rs.getInt(1) + " " +
               rs.getString(2) + " " +
