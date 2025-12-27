@@ -1,4 +1,4 @@
-com/hibernate/project/Alien.class
-com/hibernate/project/Laptop.class
-com/hibernate/project/App.class
-com/hibernate/project/Student.class
+com\hibernate\project\Alien.class
+com\hibernate\project\App.class
+com\hibernate\project\Student.class
+com\hibernate\project\Laptop.class
